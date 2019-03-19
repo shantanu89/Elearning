@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WatchUpload2"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="30dp"
+        android:text="@string/select_option"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/watch_vedioops"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/watch_video"/>
+
+    <Button
+        android:id="@+id/upload_vediodoops"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/upload_video"/>
+
+</LinearLayout>

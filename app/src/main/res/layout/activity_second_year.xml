@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".SecondYear">
+
+    <EditText
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:text="@string/select_subject"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/s_acpld"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/acpld"/>
+    <Button
+        android:id="@+id/s_dcfm"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/dcfm"/>
+    <Button
+        android:id="@+id/s_cao"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/cao"/>
+    <Button
+        android:id="@+id/s_tfcs"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/tfcs"/>
+    <Button
+        android:id="@+id/s_os"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/os"/>
+    <Button
+        android:id="@+id/s_sp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/sp"/>
+
+
+
+
+
+
+</LinearLayout>

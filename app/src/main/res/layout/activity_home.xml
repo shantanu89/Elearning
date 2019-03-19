@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/background">
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="45dp"
+        android:text="Select Year"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/second_year"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/_2nd_year"/>
+
+    <Button
+        android:id="@+id/third_year"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/_3rd_year"/>
+
+    <Button
+        android:id="@+id/fourth_year"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/_4th_year"/>
+
+
+
+</LinearLayout>

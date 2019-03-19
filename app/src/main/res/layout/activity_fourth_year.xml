@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourthYear"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp"
+        android:text="@string/select_subject"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/s_df"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/df"/>
+    <Button
+        android:id="@+id/s_dos"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/dos"/>
+    <Button
+        android:id="@+id/s_ics"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/ics"/>
+    <Button
+        android:id="@+id/s_lp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/lp"/>
+    <Button
+        android:id="@+id/s_mcom"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/mcom"/>
+    <Button
+        android:id="@+id/s_tcpip"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_shape"
+        android:text="@string/tcpip"/>
+
+
+</LinearLayout>
