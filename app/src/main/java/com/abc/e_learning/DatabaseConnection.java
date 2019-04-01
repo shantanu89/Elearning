@@ -15,6 +15,8 @@ public class DatabaseConnection extends SQLiteOpenHelper
     public static final String coloumn3="emailId";
     public static final String coloumn4="MobileNumber";
     public static final String coloumn5="password";
+    public static final String coloumn6="VideoLink";
+
 
 
     public DatabaseConnection(Context context)
@@ -25,7 +27,7 @@ public class DatabaseConnection extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-      db.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,emailID TEXT,MobileNumber Number ,password TEXT)");
+      db.execSQL("CREATE TABLE registeruser (ID INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT,emailID TEXT,MobileNumber Number ,password TEXT,VideoLink TEXT)");
     }
 
     @Override
@@ -48,6 +50,16 @@ public class DatabaseConnection extends SQLiteOpenHelper
         return res;
     }
 
+    public long adduser1(String VideoLink)
+    {
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+        contentValues.put("VideoLink",VideoLink);
+        long res1 =db.insert("registeruser",null,contentValues);
+        db.close();
+        return res1;
+    }
+
     public boolean checkUser(String username,String password)
     {
         String[] coloumns={ coloumn1 };
@@ -64,6 +76,13 @@ public class DatabaseConnection extends SQLiteOpenHelper
         else
              return false;
 
+    }
+
+    public Cursor ViewData()
+    {
+        SQLiteDatabase sqlitedatabase = this.getReadableDatabase();
+        Cursor cursor = sqlitedatabase.rawQuery("select * from " + TABLE_NAME,null);
+        return cursor;
     }
 
 }

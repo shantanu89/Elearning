@@ -30,5 +30,15 @@ public class WatchUpload3 extends AppCompatActivity
                 startActivity(watchdbms);
             }
         });
+
+        uploaddbms.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+               Intent uploadintent3 = new Intent(WatchUpload3.this,UploadActivity1.class);
+               startActivity(uploadintent3);
+            }
+        });
     }
 }

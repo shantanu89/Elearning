@@ -39,4 +39,7 @@
     <string name="select_option">Select Option</string>
     <string name="watch_video">Watch Video</string>
     <string name="upload_video">Upload Video</string>
+    <string name="view_list">View List</string>
+    <string name="approved_list">Approved List</string>
+    <string name="save">SAVE</string>
 </resources>

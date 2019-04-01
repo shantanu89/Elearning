@@ -28,6 +28,8 @@ public class VideoActivity extends YouTubeBaseActivity
     Button btnply;
     YouTubePlayer.OnInitializedListener mOnInitializeListner;
 
+    String item[] = new String[] {"sample1" , "sample2" ,"sample3"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -36,6 +38,10 @@ public class VideoActivity extends YouTubeBaseActivity
         Log.d(TAG, "onCreate: Starting,");
         btnply = (Button) findViewById(R.id.button_videoplay);
         mYouTubePlayerView= (YouTubePlayerView) findViewById(R.id.viewplayvedio);
+
+        ListView listView = (ListView) findViewById(R.id.list_view);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,item);
+        listView.setAdapter(adapter);
 
         mOnInitializeListner = new YouTubePlayer.OnInitializedListener()
         {
@@ -56,6 +62,16 @@ public class VideoActivity extends YouTubeBaseActivity
                 Log.d(TAG,"onClick: Failed to initializing");
             }
         };
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                Log.d(TAG,"onClick: Initializing YouTube Player,");
+                mYouTubePlayerView.initialize(YouTubeConfig.getApi_Key(),mOnInitializeListner);
+            }
+        });
 
         btnply.setOnClickListener(new View.OnClickListener()
         {

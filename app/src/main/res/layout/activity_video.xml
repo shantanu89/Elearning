@@ -14,7 +14,8 @@
         class="com.google.android.youtube.player.YouTubePlayerView"
         android:id="@+id/viewplayvedio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"/>
 
     <Button
 
@@ -22,4 +23,12 @@
         android:layout_width="113dp"
         android:layout_height="wrap_content"
         android:text="Play" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:layout_marginTop="50dp">
+
+    </ListView>
 </LinearLayout>

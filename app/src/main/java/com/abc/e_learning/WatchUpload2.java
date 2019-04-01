@@ -31,5 +31,14 @@ public class WatchUpload2 extends AppCompatActivity
                 startActivity(newoops);
             }
         });
+
+        muploadoops.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+               Intent uploadintent1 = new Intent(WatchUpload2.this,UploadActivity1.class);
+               startActivity(uploadintent1);
+            }
+        });
      }
 }

@@ -31,5 +31,15 @@ public class WatchUpload4 extends AppCompatActivity
                 startActivity(watchdf);
             }
         });
+
+        uploaddf.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+              Intent uploadintent4 =new Intent(WatchUpload4.this,UploadActivity1.class);
+              startActivity(uploadintent4);
+            }
+        });
     }
 }

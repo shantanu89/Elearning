@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoActivitydos"></activity>
+        <activity android:name=".admin_approved_list"></activity>
+        <activity android:name=".adminviewlist" />
+        <activity android:name=".After_admin_Login" />
+        <activity android:name=".UploadActivity1" />
+        <activity android:name=".VideoActivitydos" />
         <activity android:name=".WatchUpload5" />
         <activity android:name=".VideoActivitydf" />
         <activity android:name=".WatchUpload4" />

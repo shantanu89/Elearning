@@ -12,11 +12,14 @@ public class WatchUpload extends AppCompatActivity
     Button mwatch;
     Button mupload;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_watch_upload);
+
+
 
         mwatch  = (Button) findViewById(R.id.watch_vedio);
         mupload = (Button) findViewById(R.id.upload_vedio);
@@ -36,8 +39,8 @@ public class WatchUpload extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Intent newupload = new Intent(WatchUpload.this,VideoActivity.class);
-                startActivity(newupload);
+                    Intent newupload = new Intent(WatchUpload.this,UploadActivity1.class);
+                    startActivity(newupload);
             }
         });
     }

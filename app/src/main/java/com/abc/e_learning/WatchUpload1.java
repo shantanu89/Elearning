@@ -31,5 +31,15 @@ public class WatchUpload1 extends AppCompatActivity
                 startActivity(newdcfm);
             }
         });
+
+        muploaddcfm.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+               Intent uploadintent = new Intent(WatchUpload1.this,UploadActivity1.class);
+               startActivity(uploadintent);
+            }
+        });
     }
 }

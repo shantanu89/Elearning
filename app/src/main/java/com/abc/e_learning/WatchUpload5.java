@@ -31,5 +31,14 @@ public class WatchUpload5 extends AppCompatActivity
                 startActivity(watchdof);
             }
         });
+
+        uploaddof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+              Intent uploadintent5 =new Intent(WatchUpload5.this,UploadActivity1.class);
+              startActivity(uploadintent5);
+            }
+        });
     }
 }
